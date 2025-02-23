@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Visie - Marginall Custom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Algemene stijl */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Zwarte achtergrond */
+            color: #fff; /* Witte tekst */
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Titel */
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Paragraaf en tekst */
+        p, li {
+            font-size: 1.1rem;
+            font-weight: 300;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li::before {
+            content: "•";
+            color: #efe8e8; /* Accentkleur */
+            margin-right: 8px;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #e4dfdf; /* Rood accent */
+        }
+
+        /* Verborgen content */
+        .hidden-content {
+            display: none;
+        }
+
+        /* "Meer lezen" knop */
+        .read-more-btn {
+            background: transparent;
+            color: #ede7e7;
+            border: 2px solid #f7eeee;
+            padding: 10px 20px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .read-more-btn:hover {
+            background-color: #e9e1e1;
+            color: #000;
+        }
+
+        /* Futuristische lijnen en details */
+        .line {
+            width: 60px;
+            height: 2px;
+            background-color: #eee8e8;
+            margin: 20px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Titel -->
+        <h1>Marginall Custom</h1>
+        <div class="line"></div>
+
+        <!-- Samenvatting -->
+        <div class="content-summary">
+            <p>
+                <span class="highlight">Vision:</span> Empowering individuals to express themselves freely through <span class="highlight">unique fashion</span>.
+            </p>
+            <p>
+                Bij Marginall Custom is ieder kledingstuk een <span class="highlight">canvas voor creativiteit</span>. Wij doorbreken conformiteit en omarmen <span class="highlight">originaliteit</span>.
+            </p>
+
+            <!-- Categorieën -->
+            <p><span class="highlight">Onze categorieën:</span></p>
+            <ul>
+                <li>Heat Transfer – Stijlvol en betaalbaar</li>
+                <li>Embroidery – Luxe en vakmanschap</li>
+                <li>Patchwork – Innovatie ontmoet traditie</li>
+                <li>Silk Screen/Stencil – Moderne texturen</li>
+            </ul>
+
+            <!-- Verborgen content -->
+            <div class="hidden-content" id="more-text">
+                <p>
+                    <span class="highlight">"The One" collectie:</span> 33 unieke hoodies, jassen en sweaters. Elk kledingstuk is gekoppeld aan een exclusieve 
+                    <span class="highlight">instrumentale track</span> (dubstep, house, techno of trance).
+                </p>
+                
+                <p>
+                    <span class="highlight">Kleurenpalet:</span> Rood, Geel, Blauw, Wit en Zwart – een weerspiegeling van onze identiteit.
+                </p>
+                <p>
+                    Bij Marginall Custom draait alles om <span class="highlight">zelfexpressie</span> en vrijheid.
+                </p>
+            </div>
+
+            <!-- Lees meer knop -->
+            <button class="read-more-btn" onclick="toggleReadMore()">Meer lezen</button>
+        </div>
+    </div>
+
+    <!-- Script voor "Meer lezen" knop -->
+    <script>
+        function toggleReadMore() {
+            const hiddenContent = document.getElementById("more-text");
+            const btn = document.querySelector(".read-more-btn");
+
+            if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
+                hiddenContent.style.display = "block";
+                btn.textContent = "Minder lezen";
+            } else {
+                hiddenContent.style.display = "none";
+                btn.textContent = "Meer lezen";
+            }
+        }
+    </script>
+</body>
+</html>

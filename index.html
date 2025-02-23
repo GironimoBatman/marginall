@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marginall Custom</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Algemene opmaak voor de pagina */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Zwarte achtergrond */
+            color: #fff; /* Witte tekst */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Container voor de pagina */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Logo in plaats van tekst */
+        .brand-name img {
+            width: 300px; /* Breedte van het logo */
+            height: auto;
+        }
+
+        /* Navigatiemenu */
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu ul li {
+            display: inline;
+        }
+
+        .menu ul li a {
+            color: #fff; /* Witte tekst voor de menu links */
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .menu ul li a:hover {
+            color: #f1d60d; /* Grijs bij hover */
+        }
+
+        /* Druppeleffect */
+        .drop {
+            width: 10px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 10px auto;
+        }
+
+        /* Draaibare afbeelding */
+        .rotating-image {
+            width: 150px;
+            height: auto;
+            animation: spin 5s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo en draaiende afbeelding -->
+    <div class="container">
+        <div class="brand-image">
+            <img src="logo2.jpeg" alt="Afbeelding" class="rotating-image">
+        </div>
+        <div class="brand-name">
+            <img src="logo.png" alt="Marginall Custom Logo">
+        </div>
+    </div>
+
+
+    <!-- Navigatiemenu -->
+    <div class="menu">
+        <ul>
+            <li><a href="Visie.html">Visie</a></li>
+            <li><a href="collectie.html">Collectie</a></li>
+            <li><a href="afspraak-maken.html">Afspraak maken</a></li>
+            
+        </ul>
+    </div>
+
+    <!-- Druppel-effect -->
+    <div class="drop"></div>
+    <div class="drop"></div>
+    <div class="drop"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+    
